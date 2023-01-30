@@ -12,6 +12,7 @@ export class GiphyService {
         const params = new HttpParams()
         .set("q", searchCriteria.text)
         .set("limit", searchCriteria.count)
+        //dont forget to use the API key
         .set("api_key", "NG54uhr4c0hUUjdlETat7kGrcnv7AiGh" )
 
         return firstValueFrom<Gif[]>(
